@@ -143,8 +143,100 @@ header {
 }
 
 
+/* convention section style */
+
+.convention {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+.convention-text {
+    color: #070211;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.convention-btn {
+    background-color: #FF0000;
+    padding: 10px 28px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.special {
+    color: #FF0000;
+}
+
+/* offer banner design implement */
+
+.offer-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.offer-banner .card {
+    flex: 1;
+    padding: 10px;
+}
+
+.offer-banner .border-design img{
+    width: 100%;
+    height: auto;
+}
+
+.offer-banner .border-design {
+    border: 10px solid #FF0000;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.offer-banner .card h5{
+    color: #FF0000;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+.offer-banner .card h3{
+    color: #070211;
+    font-weight: 800;
+    font-size: 3rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+.offer-banner .card p{
+    color: rgba(7, 2, 17, 0.6);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.offer-banner .card h4{
+    color: #FF0000;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width:576px) {
-    header,.midnight-party {
+
+    header,
+    .midnight-party {
         height: auto;
         padding: 80px 10px;
         background-position: top;
@@ -189,13 +281,18 @@ header {
     .party-text {
         width: 100%;
     }
+
+    .convention {
+        padding: 0px 10px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    .party-text{
+    .party-text {
         margin-left: 20px;
     }
-    .party-img img{
+
+    .party-img img {
         width: 70%;
     }
 }
